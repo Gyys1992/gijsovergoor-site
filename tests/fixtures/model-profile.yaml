@@ -1,0 +1,30 @@
+profile:
+  name: "Gijs Overgoor"
+  title: "Assistant Professor of Marketing"
+  institution: "Southern Methodist University"
+  location: "Dallas, Texas, USA"
+  email: "govergoor@smu.edu"
+  website: "gijsovergoor.com"
+  positioning: "A complete public research positioning statement."
+  short_positioning: "A concise public research positioning statement."
+  links: []
+appointments: []
+education: []
+research_interests: []
+publications: []
+presentations:
+  - id: "talk-example-university-2026"
+    kind: "invited_talk"
+    year: 2026
+    date: "2026-07-10"
+    title: "Invited Marketing Seminar at Example University"
+    venue: "Example University"
+    source_key: "2026-07-10|talk|invited-marketing-seminar-at-example-university"
+teaching: []
+students: []
+industry: []
+media: []
+awards: []
+service: []
+technical_strengths: []
+languages: []

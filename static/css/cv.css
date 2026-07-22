@@ -1,0 +1,73 @@
+.route-cv main {
+  width: min(900px, calc(100% - 3rem));
+  padding-top: 2.5rem;
+}
+.cv {
+  color: #161616;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: .94rem;
+  line-height: 1.38;
+}
+.cv a { color: inherit; }
+.cv-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cv-header h1 {
+  margin-bottom: .4rem;
+  font-size: 2rem;
+  letter-spacing: .02em;
+}
+.cv-header p { margin: .15rem 0; }
+.cv section { margin-top: 1.4rem; }
+.cv section > h2 {
+  margin: 0 0 .8rem;
+  padding-bottom: .18rem;
+  border-bottom: 1px solid #222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.cv p { margin: .55rem 0; }
+.cv ul { margin: .45rem 0; padding-left: 1.3rem; }
+.cv li { margin: .2rem 0; }
+.cv-dated {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  margin: .8rem 0;
+}
+.cv-dated > span {
+  font-style: italic;
+  white-space: nowrap;
+}
+.cv .publication {
+  padding: .45rem 0;
+  background: transparent;
+}
+.cv .citation { max-width: none; }
+.cv .related-media { margin-left: 1rem; }
+.cv .citation,
+.cv .media-item,
+.cv-entry,
+.cv a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 620px) {
+  .route-cv main { width: min(100% - 1.5rem, 900px); }
+  .cv { font-size: .9rem; }
+  .cv-dated { grid-template-columns: 1fr; gap: .15rem; }
+  .cv-dated > span { grid-row: 1; white-space: normal; }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .skip-link { display: none; }
+  body { background: white; }
+  .route-cv main { width: 100%; padding: 0; }
+  .cv a { text-decoration: none; }
+}

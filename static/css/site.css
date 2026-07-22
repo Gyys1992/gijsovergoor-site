@@ -1,0 +1,180 @@
+:root {
+  --paper: #f6f0e6;
+  --paper-deep: #eee4d5;
+  --ink: #25211e;
+  --muted: #716961;
+  --brick: #9b3f2f;
+  --brick-dark: #713025;
+  --rule: #cfc2b1;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+a { color: var(--brick-dark); text-underline-offset: 0.18em; }
+a:hover { color: var(--brick); }
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--brick);
+  outline-offset: 4px;
+}
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: -5rem;
+  z-index: 10;
+  padding: .7rem 1rem;
+  background: var(--ink);
+  color: white;
+}
+.skip-link:focus { top: 1rem; }
+.site-header,
+.site-footer,
+main {
+  width: min(1120px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 5.25rem;
+  border-bottom: 1px solid var(--rule);
+}
+.site-name {
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+nav ul,
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  color: var(--muted);
+  font-size: .9rem;
+  text-decoration: none;
+}
+nav a[aria-current="page"] {
+  color: var(--brick-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+main { padding-block: clamp(3rem, 7vw, 7rem); }
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  line-height: 1.15;
+  text-wrap: balance;
+}
+h1 { margin: 0 0 1.25rem; font-size: clamp(2.1rem, 4.2vw, 3.25rem); }
+h2 { margin: 0 0 1.5rem; font-size: clamp(1.45rem, 2.5vw, 1.85rem); }
+h3 { font-size: 1.1rem; }
+.eyebrow {
+  margin: 0 0 1rem;
+  color: var(--brick-dark);
+  font-size: .78rem;
+  font-weight: 750;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, .6fr);
+  align-items: center;
+  gap: clamp(2rem, 8vw, 7rem);
+}
+.hero img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+.lede,
+.page-intro > p:last-child {
+  max-width: 46rem;
+  color: #4f4943;
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+.hero-actions { display: flex; gap: 1.5rem; margin-top: 2rem; }
+.text-link { font-weight: 700; }
+.page-intro,
+.prose-page { max-width: 780px; }
+.page-section {
+  margin-top: clamp(4rem, 8vw, 8rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--rule);
+}
+.project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--rule); }
+.project-list article,
+.working-paper,
+.publication {
+  background: var(--paper);
+  padding: 1.5rem 0;
+}
+.project-list article { padding: 1.75rem; }
+.working-paper + .working-paper,
+.publication + .publication { border-top: 1px solid var(--rule); }
+.project-status,
+.author-note,
+.media-format { color: var(--muted); font-size: .9rem; }
+.citation,
+.working-paper p,
+.prose p,
+.job-market p { max-width: 76ch; }
+.paper-links,
+.related-media { margin-top: .75rem; }
+.paper-links a + a { margin-left: 1rem; }
+.related-media h3,
+.related-media h4 {
+  margin-bottom: .35rem;
+  font-family: var(--sans);
+  font-size: .78rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.media-list,
+.related-media ul { padding-left: 1.2rem; }
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 2rem 3rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+@media (max-width: 760px) {
+  .site-header,
+  .site-footer,
+  main { width: min(100% - 2rem, 680px); }
+  .site-header { align-items: flex-start; flex-direction: column; justify-content: center; gap: .75rem; padding-block: 1rem; }
+  nav ul { gap: .35rem 1rem; }
+  .hero { grid-template-columns: 1fr; }
+  .hero img { max-width: 340px; grid-row: 1; }
+  .project-list { grid-template-columns: 1fr; }
+  .hero-actions,
+  .site-footer { align-items: flex-start; flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -1,0 +1,48 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<header class="page-intro">
+  <h1>Publications and projects</h1>
+  {% set publication_venues = profile.publications | selectattr('category', 'equalto', 'journal') | map(attribute='journal') | list %}
+  {% set media_outlets = profile.media | map(attribute='outlet') | list %}
+  <p>My work has been published in {{ publication_venues | human_join }}. It has been covered by {{ media_outlets | human_join }}.</p>
+</header>
+<section class="page-section">
+  <h2>Journal publications</h2>
+  {% set show_related_media = false %}
+  {% for publication in profile.publications if publication.category == "journal" %}
+  {% include "partials/publication.html.j2" %}
+  {% endfor %}
+</section>
+{% set conference_publications = profile.publications | selectattr('category', 'equalto', 'conference') | list %}
+{% if conference_publications %}
+<section class="page-section">
+  <h2>Conference proceedings publications</h2>
+  {% for publication in conference_publications %}
+  {% include "partials/publication.html.j2" %}
+  {% endfor %}
+</section>
+{% endif %}
+{% if projects %}
+<section class="page-section">
+  <h2>Current projects</h2>
+  {% for project in projects %}
+  <article class="working-paper" data-work-id="{{ project.id }}">
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.authors | join(', ') }}</p>
+    <p class="project-status">{{ project_status_text(project) }}</p>
+    <p>{{ project.summary }}</p>
+    <p class="paper-links">{% for link in project.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</p>
+    {% for award in awards_by_work.get(project.id, []) %}
+    <p class="paper-honor" data-award-id="{{ award.id }}">{{ award.title }}</p>
+    {% endfor %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+<section class="page-section" id="media">
+  <h2>Media coverage</h2>
+  <ul class="media-list">
+    {% for mention in profile.media %}{% include "partials/media.html.j2" %}{% endfor %}
+  </ul>
+</section>
+{% endblock %}

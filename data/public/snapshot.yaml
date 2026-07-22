@@ -1,0 +1,765 @@
+schema_version: 1
+profile:
+  profile:
+    name: Gijs Overgoor
+    title: Assistant Professor of Marketing
+    institution: SMU Cox School of Business
+    location: Dallas, Texas, USA
+    email: govergoor@smu.edu
+    website: gijsovergoor.com
+    portrait_alt: Gijs Overgoor, Assistant Professor of Marketing at SMU Cox School of Business
+    positioning: I develop and validate AI-based measures for unstructured marketing data. My primary
+      substantive areas are advertising and digital platforms, with a specific focus on visual content.
+      A complementary research stream examines platform misinformation and fake-review detection. I use
+      a multi-method approach that combines AI and machine learning with econometrics, surveys and experiments,
+      and neuroscience. I also study AI itself, including its use in marketing and the validity of AI-based
+      annotation and measurement.
+    short_positioning: I study advertising and digital platforms, with a particular focus on visual content.
+      My work combines AI, econometrics, surveys and experiments, and neuroscience.
+    links:
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?hl=en&user=aiHz0J4AAAAJ
+    - label: SSRN
+      url: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4032891
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/gijs-overgoor-phd-4145a464/
+    - label: GitHub
+      url: https://github.com/gyys1992
+    - label: How to pronounce my name
+      url: https://www.youtube.com/watch?v=Gcsn2rs_RsQ
+  appointments:
+  - id: appointment-smu-2024
+    institution: Southern Methodist University
+    role: Assistant Professor of Marketing
+    start_year: 2024
+  - id: appointment-rit-2021
+    institution: Rochester Institute of Technology
+    role: Assistant Professor of Marketing
+    start_year: 2021
+    end_year: 2023
+  - id: appointment-ncsu-2017
+    institution: North Carolina State University
+    role: Visiting Scholar
+    start_year: 2017
+    end_year: 2021
+  education:
+  - id: education-uva-phd-2021
+    institution: University of Amsterdam
+    degree: PhD Marketing
+    year: 2021
+    details:
+    - 'Co-chairs: Willemijn van Dolen and Bill Rand'
+    - 'Dissertation: Visual Analytics and Artificial Intelligence for Marketing'
+  - id: education-uva-ms-2016
+    institution: University of Amsterdam
+    degree: MS Econometrics
+    year: 2016
+    details:
+    - 'Specialization: Big Data in Business Analytics'
+  - id: education-uva-bs-2015
+    institution: University of Amsterdam
+    degree: BS Econometrics and Operations Research
+    year: 2015
+    details: []
+  research_interests:
+  - Visual Marketing
+  - Advertising
+  - Artificial Intelligence
+  - Machine Learning
+  - Econometrics
+  - Digital Platforms
+  - Platform Misinformation and Fake-Review Detection
+  - Neuroscience
+  publications:
+  - id: pub-he-2022-fake-review-buyers
+    category: journal
+    citation_html: 'S. He, B. Hollenbeck, <strong>G. Overgoor</strong>, D. Proserpio, A. Tosyali (2022),
+      “Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon,” <em>Proceedings
+      of the National Academy of Sciences, 119</em> (47).'
+    title: 'Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon'
+    authors:
+    - Sherry He
+    - Brett Hollenbeck
+    - Gijs Overgoor
+    - Davide Proserpio
+    - Ali Tosyali
+    year: 2022
+    journal: Proceedings of the National Academy of Sciences
+    volume: '119'
+    issue: '47'
+    author_note: Authors listed in alphabetical order.
+    links:
+    - label: DOI
+      url: https://doi.org/10.1073/pnas.2211932119
+    - label: SSRN
+      url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4147920
+  - id: pub-overgoor-2022-simplicity
+    category: journal
+    citation_html: '<strong>G. Overgoor</strong>, W. Rand, W. Van Dolen, M. Mazloom (2022), “Simplicity
+      is not Key: Understanding Marketer-Generated Social Media Images and Consumer Liking,” <em>International
+      Journal of Research in Marketing, 39</em> (3), 639–655.'
+    title: 'Simplicity is not Key: Understanding Marketer-Generated Social Media Images and Consumer Liking'
+    authors:
+    - Gijs Overgoor
+    - William Rand
+    - Willemijn van Dolen
+    - Masoud Mazloom
+    year: 2022
+    journal: International Journal of Research in Marketing
+    volume: '39'
+    issue: '3'
+    pages: 639–655
+    links:
+    - label: DOI
+      url: https://doi.org/10.1016/j.ijresmar.2021.12.005
+    - label: UvA DARE
+      url: https://dare.uva.nl/search?identifier=93b1bfb6-205a-49ff-9802-a7d29bad6c29
+  - id: pub-overgoor-2019-ai-marketing
+    category: journal
+    citation_html: '<strong>G. Overgoor</strong>, M. Chica, W. Rand, A. Weishampel (2019), “Letting the
+      Computers Take Over: Using AI to Solve Marketing Problems,” <em>California Management Review, 61</em>
+      (4), 156–185.'
+    title: 'Letting the Computers Take Over: Using AI to Solve Marketing Problems'
+    authors:
+    - Gijs Overgoor
+    - Manuel Chica
+    - William Rand
+    - Anthony Weishampel
+    year: 2019
+    journal: California Management Review
+    volume: '61'
+    issue: '4'
+    pages: 156–185
+    links:
+    - label: DOI
+      url: https://doi.org/10.1177/0008125619859318
+    - label: UvA DARE
+      url: https://dare.uva.nl/search?identifier=0ec5673e-5725-46a1-baef-1c18101a2ec6
+  - id: proc-xie-2026-adsum
+    category: conference
+    citation_html: 'W. Xie, Y. Zhu, <strong>G. Overgoor</strong>, Y. Bart, A. Lapedriza Garcia, S. Ostadabbas
+      (2026), “AdSum: Two-Stream Audio-Visual Summarization for Automated Video Advertisement Clipping,”
+      <em>International Conference on Multimedia Modeling</em>, 261–275.'
+    title: 'AdSum: Two-Stream Audio-Visual Summarization for Automated Video Advertisement Clipping'
+    authors:
+    - Wen Xie
+    - Yanjun Zhu
+    - Gijs Overgoor
+    - Yakov Bart
+    - Agata Lapedriza Garcia
+    - Sarah Ostadabbas
+    year: 2026
+    journal: International Conference on Multimedia Modeling
+    pages: 261–275
+    links:
+    - label: DOI
+      url: https://doi.org/10.1007/978-981-95-6950-2_19
+    - label: arXiv
+      url: https://arxiv.org/abs/2510.26569
+  - id: proc-overgoor-2017-brand-popularity
+    category: conference
+    citation_html: <strong>G. Overgoor</strong>, M. Mazloom, R. Rietveld, M. Worring, W. Van Dolen (2017),
+      “A Spatio-Temporal Category Representation for Brand Popularity Prediction,” in <em>Proceedings
+      of the ACM International Conference on Multimedia Retrieval</em>, Bucharest, Romania, 233–241.
+    title: A Spatio-Temporal Category Representation for Brand Popularity Prediction
+    authors:
+    - Gijs Overgoor
+    - Masoud Mazloom
+    - Robert Rietveld
+    - Marcel Worring
+    - Willemijn van Dolen
+    year: 2017
+    journal: Proceedings of the ACM International Conference on Multimedia Retrieval
+    pages: 233–241
+    links:
+    - label: UvA DARE
+      url: https://www.dare.uva.nl/id/e732160c-34f3-4766-bb87-e8642d40d44d
+  presentations:
+  - id: talk-pepsico-2025
+    kind: invited_talk
+    year: 2025
+    title: PepsiCo
+    venue: PepsiCo
+    source_key: 2025|talk|presented-on-business-ai-at-pepsico-headquarters
+  - id: talk-toyota-research-institute-2025
+    kind: invited_talk
+    year: 2025
+    title: Toyota Research Institute
+    venue: Toyota Research Institute
+    source_key: 2025|talk|presented-neuroai-paper-at-toyota-research-institute
+  - id: talk-arf-marketing-effectiveness-2025
+    kind: invited_talk
+    year: 2025
+    title: Advertising Research Foundation – Marketing Effectiveness Accelerator
+    venue: Advertising Research Foundation
+    source_key: 2025|talk|presented-neuroai-paper-at-the-advertising-research-foundation-marketing-effectiveness-accelerator-invited-speaker
+  - id: talk-wisconsin-marketing-ai-2024
+    kind: invited_talk
+    year: 2024
+    title: Symposium on Marketing AI at Wisconsin School of Business
+    venue: Wisconsin School of Business
+  - id: talk-smu-2023
+    kind: invited_talk
+    year: 2023
+    title: Southern Methodist University
+    venue: Southern Methodist University
+  - id: talk-ncsu-business-analytics-2023
+    kind: invited_talk
+    year: 2023
+    title: NC State Business Analytics Initiative Roundtable
+    venue: North Carolina State University
+  - id: talk-suny-geneseo-2023
+    kind: invited_talk
+    year: 2023
+    title: SUNY Geneseo Marketing Seminar
+    venue: SUNY Geneseo
+  - id: talk-gwu-2022
+    kind: invited_talk
+    year: 2022
+    title: George Washington University
+    venue: George Washington University
+  - id: talk-northeastern-2022
+    kind: invited_talk
+    year: 2022
+    title: Northeastern University
+    venue: Northeastern University
+  - id: talk-emac-ddc-2022
+    kind: invited_talk
+    year: 2022
+    title: EMAC Annual Conference — Special Session for the Doctoral Dissertation Competition
+    venue: EMAC Annual Conference
+  - id: talk-utep-2020
+    kind: invited_talk
+    year: 2020
+    title: University of Texas at El Paso
+    venue: University of Texas at El Paso
+  - id: talk-rit-2020
+    kind: invited_talk
+    year: 2020
+    title: Rochester Institute of Technology
+    venue: Rochester Institute of Technology
+  - id: talk-teradata-universe-2019
+    kind: invited_talk
+    year: 2019
+    title: Teradata Universe
+    venue: Teradata Universe
+  - id: talk-teradata-analytics-universe-2018
+    kind: invited_talk
+    year: 2018
+    title: Teradata Analytics Universe
+    venue: Teradata Analytics Universe
+  - id: presentation-symposium-ai-marketing-2026
+    kind: conference_presentation
+    year: 2026
+    title: Symposium on AI in Marketing
+    venue: Symposium on AI in Marketing
+    source_key: 2026-05-11|talk|madison-ai-symposium-presented-adnotator-at-symposium-on-ai-in-marketing-madison
+  - id: presentation-ama-winter-madrid-2026
+    kind: conference_presentation
+    year: 2026
+    title: AMA Winter Academic Conference, Madrid
+    venue: AMA Winter Academic Conference
+    source_key: 2026-02-14|talk|presented-at-winter-ama-conference-madrid
+  - id: presentation-scholar-session-2025
+    kind: conference_presentation
+    year: 2025
+    title: Scholar Session
+    venue: Scholar Session
+    source_key: 2025|talk|presented-at-scholar-session
+  - id: presentation-bizai-2025
+    kind: conference_presentation
+    year: 2025
+    title: BizAI Conference
+    venue: BizAI Conference
+    source_key: 2025|talk|presented-3-papers-at-bizai-conference
+  - id: presentation-marketing-ai-symposium-2025
+    kind: conference_presentation
+    year: 2025
+    title: Marketing AI Symposium
+    venue: Marketing AI Symposium
+    source_key: 2025|talk|presented-at-marketing-ai-symposium
+  - id: presentation-marketing-strategy-consortium-2025
+    kind: conference_presentation
+    year: 2025
+    title: Marketing Strategy Consortium
+    venue: Marketing Strategy Consortium
+    source_key: 2025|talk|presented-at-marketing-strategy-consortium
+  - id: presentation-bizai-2024
+    kind: conference_presentation
+    year: 2024
+    title: BizAI Conference
+    venue: BizAI Conference
+    source_key: 2024|talk|presented-at-bizai-conference
+  - id: presentation-marketing-dynamics-2024
+    kind: conference_presentation
+    year: 2024
+    title: Marketing Dynamics
+    venue: Marketing Dynamics
+    source_key: 2024|talk|presented-at-marketing-dynamics
+  - id: presentation-emac-2024
+    kind: conference_presentation
+    year: 2024
+    title: EMAC Annual Conference
+    venue: EMAC Annual Conference
+    source_key: 2024|talk|presented-at-emac
+  - id: presentation-scecr-2024
+    kind: conference_presentation
+    year: 2024
+    title: Statistical Challenges in E-Commerce Research
+    venue: Statistical Challenges in E-Commerce Research
+    source_key: 2024|talk|presented-at-scecr
+  - id: presentation-ms-dei-2023
+    kind: conference_presentation
+    year: 2023
+    title: Marketing Science DEI Conference
+    venue: Marketing Science DEI Conference
+  - id: presentation-marketing-dynamics-2023
+    kind: conference_presentation
+    year: 2023
+    title: Marketing Dynamics
+    venue: Marketing Dynamics
+  - id: presentation-emac-2022
+    kind: conference_presentation
+    year: 2022
+    title: EMAC Annual Conference
+    venue: EMAC Annual Conference
+  - id: presentation-scecr-2022
+    kind: conference_presentation
+    year: 2022
+    title: Statistical Challenges in E-Commerce Research
+    venue: Statistical Challenges in E-Commerce Research
+  - id: presentation-marketing-science-2021
+    kind: conference_presentation
+    year: 2021
+    title: Marketing Science Conference
+    venue: Marketing Science Conference
+  - id: presentation-summer-ama-2021
+    kind: conference_presentation
+    year: 2021
+    title: AMA Summer Academic Conference
+    venue: AMA Summer Academic Conference
+  - id: presentation-hicss-2020
+    kind: conference_presentation
+    year: 2020
+    title: Hawaii International Conference on System Sciences
+    venue: Hawaii International Conference on System Sciences
+  - id: presentation-marketing-science-2020
+    kind: conference_presentation
+    year: 2020
+    title: Marketing Science Conference
+    venue: Marketing Science Conference
+  - id: presentation-summer-ama-2020
+    kind: conference_presentation
+    year: 2020
+    title: AMA Summer Academic Conference
+    venue: AMA Summer Academic Conference
+  - id: presentation-winter-ama-2019
+    kind: conference_presentation
+    year: 2019
+    title: AMA Winter Academic Conference
+    venue: AMA Winter Academic Conference
+  - id: presentation-winter-business-analytics-2019
+    kind: conference_presentation
+    year: 2019
+    title: Winter Conference on Business Analytics
+    venue: Winter Conference on Business Analytics
+  - id: presentation-tpm-2019
+    kind: conference_presentation
+    year: 2019
+    title: Theory and Practice in Marketing
+    venue: Theory and Practice in Marketing
+  - id: presentation-emac-2019
+    kind: conference_presentation
+    year: 2019
+    title: EMAC Annual Conference
+    venue: EMAC Annual Conference
+  - id: presentation-scecr-2019
+    kind: conference_presentation
+    year: 2019
+    title: Statistical Challenges in E-Commerce Research
+    venue: Statistical Challenges in E-Commerce Research
+  - id: presentation-marketing-science-2019
+    kind: conference_presentation
+    year: 2019
+    title: Marketing Science Conference
+    venue: Marketing Science Conference
+  - id: presentation-winter-ama-2018
+    kind: conference_presentation
+    year: 2018
+    title: AMA Winter Academic Conference
+    venue: AMA Winter Academic Conference
+  - id: presentation-scecr-2018
+    kind: conference_presentation
+    year: 2018
+    title: Statistical Challenges in E-Commerce Research
+    venue: Statistical Challenges in E-Commerce Research
+  - id: presentation-ict-open-2017
+    kind: conference_presentation
+    year: 2017
+    title: ICT Open
+    venue: ICT Open
+  - id: presentation-icmr-2017
+    kind: conference_presentation
+    year: 2017
+    title: International Conference on Multimedia Retrieval
+    venue: International Conference on Multimedia Retrieval
+  - id: tenure-talk-b10c3de9b28e
+    kind: invited_talk
+    year: 2026
+    title: Invited Marketing Seminar at Amazon (presented research)
+    venue: Invited Marketing Seminar at Amazon (presented research)
+    date: '2026-03-12'
+    source_key: 2026-03-12|talk|invited-marketing-seminar-at-amazon-presented-research
+  - id: tenure-talk-3fa76cdcb980
+    kind: invited_talk
+    year: 2026
+    title: Invited Marketing Seminar at Imperial College London
+    venue: Invited Marketing Seminar at Imperial College London
+    date: '2026-02-25'
+    source_key: 2026-02-25|talk|invited-marketing-seminar-at-imperial-college-london
+  - id: tenure-talk-0e0fbce0c560
+    kind: invited_talk
+    year: 2026
+    title: Invited Marketing Seminar at King's College London
+    venue: Invited Marketing Seminar at King's College London
+    date: '2026-02-24'
+    source_key: 2026-02-24|talk|invited-marketing-seminar-at-king-s-college-london
+  - id: tenure-talk-082c337107e1
+    kind: invited_talk
+    year: 2026
+    title: Invited Marketing Seminar at Tilburg University
+    venue: Invited Marketing Seminar at Tilburg University
+    date: '2026-02-18'
+    source_key: 2026-02-18|talk|invited-marketing-seminar-at-tilburg-university
+  - id: tenure-talk-86118a965040
+    kind: invited_talk
+    year: 2024
+    title: Presented new paper at Brown Bag Seminar
+    venue: Presented new paper at Brown Bag Seminar
+    date: '2024'
+    source_key: 2024|talk|presented-new-paper-at-brown-bag-seminar
+  teaching:
+  - id: teaching-smu-fundamentals-of-marketing
+    institution: SMU Cox School of Business
+    course: Fundamentals of Marketing
+    level: Undergraduate
+    terms:
+    - Fall 2024
+    - Fall 2025
+    - Fall 2026
+    role: Instructor
+  - id: teaching-rit-social-media-marketing
+    institution: Rochester Institute of Technology
+    course: Social Media Marketing
+    level: Undergraduate
+    terms:
+    - Fall 2021
+    - Spring 2022
+    - Fall 2022
+    - Spring 2023
+    role: Instructor
+  - id: teaching-rit-marketing-analytics-undergraduate
+    institution: Rochester Institute of Technology
+    course: Marketing Analytics
+    level: Undergraduate
+    terms:
+    - Fall 2021
+    - Fall 2022
+    - Spring 2023
+    role: Instructor
+  - id: teaching-rit-marketing-analytics-graduate
+    institution: Rochester Institute of Technology
+    course: Marketing Analytics
+    level: MBA and MS Business Analytics
+    terms:
+    - Spring 2022
+    role: Instructor
+  - id: teaching-uva-management-research-methods
+    institution: University of Amsterdam
+    course: Management Research Methods 2
+    level: Executive MBA
+    terms:
+    - '2019'
+    - '2020'
+    role: Instructor
+  - id: teaching-uva-quantitative-data-analysis
+    institution: University of Amsterdam
+    course: Quantitative Data Analysis 2
+    level: Undergraduate
+    terms:
+    - '2018'
+    role: Teaching Assistant
+  - id: teaching-uva-master-thesis-supervision
+    institution: University of Amsterdam
+    course: Master Thesis Supervision
+    level: Master's
+    terms:
+    - 2018 (10 students)
+    - 2019 (10 students)
+    - 2020 (4 students)
+    role: Supervisor
+  students:
+  - id: student-wen-xie
+    name: Wen Xie
+    program: PhD, Electrical and Computer Engineering
+    institution: University of Houston
+    role: Dissertation Committee Member
+  - id: student-bishoy-galoaa
+    name: Bishoy Galoaa
+    program: MS, Electrical and Computer Engineering
+    institution: Northeastern University
+    role: Research Mentor
+  - id: student-akshay-nagireddy
+    name: Akshay Nagireddy
+    program: MS, Data Analytics Engineering
+    institution: Northeastern University
+    role: Research Mentor
+  - id: student-pragna-bollam
+    name: Pragna Bollam
+    program: MS, Computer Science
+    institution: North Carolina State University
+    role: Research Mentor
+    placement: Amazon
+  - id: student-rohan-mestri
+    name: Rohan Mestri
+    program: MS, Computer Science
+    institution: North Carolina State University
+    role: Research Mentor
+    placement: Amazon
+  industry: []
+  professional_services: I undertake consulting and expert witness work.
+  media:
+  - id: media-forbes-fake-reviews
+    outlet: Forbes
+    title: Scammers Are Flooding Amazon With Fake Reviews For Popular Holiday Gifts
+    format: Article
+    date: '2022-12-12'
+    url: https://www.forbes.com/sites/laurendebter/2022/12/12/scammers-are-flooding-amazon-with-fake-reviews-for-popular-holiday-gifts/
+    related_work_ids:
+    - pub-he-2022-fake-review-buyers
+  - id: media-wsj-fake-reviews
+    outlet: The Wall Street Journal
+    title: How to Spot Fake Reviews and Shady Ratings on Amazon
+    format: Article
+    url: https://www.wsj.com/articles/how-to-spot-fake-reviews-and-shady-ratings-on-amazon-11658333513
+    related_work_ids:
+    - pub-he-2022-fake-review-buyers
+  - id: media-business-insider-images
+    outlet: Business Insider
+    title: How to Choose Instagram Images That Get the Most Likes
+    format: Article
+    date: '2022-01-25'
+    url: https://www.rit.edu/research/news?node%2F157723=&page=42
+    related_work_ids:
+    - pub-overgoor-2022-simplicity
+  - id: media-upnext-social-images
+    outlet: The Up Next Podcast
+    title: IJRM. Social Media Images and Consumer Likes (It’s Not Simple)
+    format: Podcast
+    date: '2022-06-02'
+    url: https://www.upnextpodcast.com/episodes/217
+    related_work_ids:
+    - pub-overgoor-2022-simplicity
+  - id: media-ai-business-perfect-picture
+    outlet: University of Amsterdam, AI & Business
+    title: In Search of the Perfect Picture with Machine Learning
+    format: Article
+    date: '2020-10-29'
+    url: https://www.uva.nl/shared-content/uva/en/news/news/2020/10/in-search-of-the-perfect-picture-with-machine-learning.html
+    related_work_ids:
+    - pub-overgoor-2022-simplicity
+  awards:
+  - id: award-buzzell-finalist-2024
+    title: Finalist, 2024 Robert D. Buzzell MSI Best Paper Award
+    year: 2024
+    related_work_ids:
+    - pub-he-2022-fake-review-buyers
+    source_key: 2024|award|msi-robert-d-buzzell-best-paper-award-finalist-for-detecting-fake-review-buyers-using-network-structure-direct-evidence-from-amazon-he-hollenbeck-overgoor-proserpio-tosyali-2022-pnas-119-47
+  - id: award-amazon-research-funding
+    title: Amazon Research Awards Funding
+    amount: $26,000 plus $20,000 in AWS credits
+    related_work_ids: []
+  - id: award-emac-aimark-dissertation-2022
+    title: Third Place, EMAC-AiMark Doctoral Dissertation Competition
+    year: 2022
+    related_work_ids: []
+  - id: award-rit-grant-writing-bootcamp
+    title: RIT Grant Writing Bootcamp Proposal Award
+    amount: $8,000
+    related_work_ids: []
+  - id: award-msi-research-grant
+    title: Marketing Science Institute Research Grant
+    amount: $10,000
+    related_work_ids: []
+  - id: award-hicss-best-paper-finalist-2021
+    title: Finalist, Hawaii International Conference on System Sciences Best Paper Award
+    year: 2021
+    related_work_ids: []
+  - id: award-isms-doctoral-consortium-2020
+    title: ISMS Marketing Science Doctoral Consortium Fellow
+    year: 2020
+    related_work_ids: []
+  - id: award-hicss-best-paper-finalist-2020
+    title: Finalist, Hawaii International Conference on System Sciences Best Paper Award
+    year: 2020
+    related_work_ids: []
+  - id: grant-persistent-ai-threat-detection-2020
+    title: Co-author, Awarded Persistent AI-Based Threat Detection Phase I Grant Proposal
+    year: 2020
+    related_work_ids: []
+  - id: grant-darpa-afore-2017
+    title: Research Assistant to PI Bill Rand, DARPA Adaptive Feature Oriented Recommender Engine Phase
+      II
+    year: 2017
+    amount: $160,000
+    related_work_ids: []
+  - id: award-uva-phd-funding-2017
+    title: Data Science and Business Analytics in Marketing PhD Funding, Amsterdam Business School
+    year: 2017
+    amount: Four years of funding
+    related_work_ids: []
+  service:
+  - id: service-journal-retailing-erb
+    role: Editorial Review Board Member
+    organization: Journal of Retailing
+  - id: service-ad-hoc-reviewer
+    role: Ad Hoc Reviewer
+    details: Journal of Marketing Research; Journal of Marketing; Marketing Science; Management Science;
+      International Journal of Research in Marketing; Information Systems Research; Journal of Consumer
+      Research
+  - id: service-smu-marketing-seminar-organizer
+    role: Organizer
+    organization: SMU Marketing Seminar Series
+  - id: service-saunders-speaker-committee
+    role: Committee Member
+    organization: Saunders Distinguished Speaker Committee
+  - id: service-saunders-analytics-competition
+    role: Organizer
+    organization: Saunders Annual Business Analytics Competition
+  technical_strengths:
+  - category: Modeling and Analysis
+    items:
+    - Python
+    - PyTorch
+    - statsmodels
+    - linearmodels
+    - PyFixest
+    - SQL
+  languages:
+  - language: Dutch
+    proficiency: fluent
+  - language: English
+    proficiency: fluent
+  - language: Spanish
+    proficiency: proficient
+projects:
+- id: project-basoa-impact-combined
+  title: How Consistency and Timing Shape Consumer Responses to Racial Representation in TV Advertising
+  authors:
+  - Gijs Overgoor
+  - Lijing Wang
+  - Gokhan Yildirim
+  - Yakov Bart
+  - Koen Pauwels
+  status: revise_and_resubmit
+  journal: Journal of Marketing Research
+  summary: Examines how the consistency and timing of racial representation in television advertising
+    shape consumer responses.
+  links: []
+  featured: true
+  order: 10
+  last_verified: '2026-07-18'
+- id: project-champions-neurovit
+  title: 'NeuroViT: A Brain-Aligned Vision Transformer for Product Image Analysis'
+  authors:
+  - Gijs Overgoor
+  - Hang-Yee Chan
+  - William Rand
+  - Willemijn van Dolen
+  status: under_review
+  journal: Journal of Marketing Research
+  summary: Develops brain-aligned image measures and studies their relationship with consumer responses
+    to product images.
+  links:
+  - label: SMU Scholar
+    url: https://scholar.smu.edu/business_marketing_research/61/
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272560
+  featured: true
+  order: 20
+  last_verified: '2026-07-22'
+- id: project-adnotator-video-understanding
+  title: 'Correcting Toward the Wrong Target: LLM-Annotated Regressors Under Noisy Human Benchmarks'
+  authors:
+  - Gijs Overgoor
+  - Samsun Knight
+  - Yakov Bart
+  status: in_preparation
+  summary: Studies the reliability, bias, and downstream validity of AI-based annotation for video-advertising
+    research.
+  links:
+  - label: SMU Scholar
+    url: https://scholar.smu.edu/business_marketing_research/59/
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5494548
+  featured: true
+  order: 30
+  last_verified: '2026-07-18'
+- id: project-fake-review
+  title: Public traces expose coordinated fake review campaigns on digital platforms
+  authors:
+  - Gijs Overgoor
+  - Ali Tosyali
+  - Ethan Feldman
+  - Anol Bhattacherjee
+  status: in_preparation
+  summary: Develops a public-data approach for identifying coordinated fake-review activity on e-commerce
+    platforms.
+  links: []
+  featured: true
+  order: 40
+  last_verified: '2026-07-18'
+- id: project-tv-ads-impact-dollar-value
+  title: 'The Dollar Value of Better Ad Content: Tracing the Relationships Between Ad Creatives, Zapping
+    Rates, and Ad Elasticities'
+  authors:
+  - Samsun Knight
+  - Gijs Overgoor
+  - Tsung Hsieh
+  - Yakov Bart
+  status: research_in_progress
+  summary: Examines relationships among television-ad creative content, viewer zapping, and advertising
+    elasticities.
+  links: []
+  featured: true
+  order: 50
+  last_verified: '2026-07-18'
+- id: project-skin-tone-diversity
+  title: 'Shades of Representation: Auto-Detection and Perception of Skin-Tone Diversity in Visual Marketing
+    Communication'
+  authors:
+  - Wen Xie
+  - Gijs Overgoor
+  - H.H. Lee
+  - Z. Han
+  status: research_in_progress
+  summary: Examines the automated measurement and consumer perception of skin-tone diversity in visual
+    marketing communication.
+  links:
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4462296
+  featured: false
+  order: 60
+  last_verified: '2026-07-18'
+- id: project-neuroad-video-understanding
+  title: Neurosensory Response to Advertising
+  authors:
+  - Gijs Overgoor
+  - Hang-Yee Chan
+  status: research_in_progress
+  summary: Develops a neuroscience-informed measure of audiovisual processing and studies its relationship
+    with advertising outcomes.
+  links: []
+  featured: false
+  order: 70
+  last_verified: '2026-07-18'

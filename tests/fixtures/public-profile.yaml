@@ -1,0 +1,60 @@
+profile:
+  name: "Gijs Overgoor"
+  title: "Assistant Professor of Marketing"
+  institution: "Southern Methodist University"
+  location: "Dallas, Texas, USA"
+  email: "govergoor@smu.edu"
+  website: "gijsovergoor.com"
+  portrait_alt: "Fixture portrait description"
+  positioning: "I develop and validate AI-based measures for unstructured marketing data."
+  short_positioning: "Visual marketing, advertising, platforms, and multi-method research."
+  links:
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/gijs-overgoor-phd-4145a464/"
+appointments: []
+education: []
+research_interests: ["Visual marketing"]
+publications:
+  - id: "pub-he-2022-fake-review-buyers"
+    category: "journal"
+    citation_html: "S. He, B. Hollenbeck, <strong>G. Overgoor</strong>, D. Proserpio, A. Tosyali (2022), “Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon,” <em>Proceedings of the National Academy of Sciences, 119</em> (47)."
+    title: "Detecting Fake Review Buyers Using Network Structure: Direct Evidence from Amazon"
+    authors:
+      - "Sherry He"
+      - "Brett Hollenbeck"
+      - "Gijs Overgoor"
+      - "Davide Proserpio"
+      - "Ali Tosyali"
+    year: 2022
+    journal: "Proceedings of the National Academy of Sciences"
+    volume: "119"
+    issue: "47"
+    author_note: "Authors listed in alphabetical order."
+    links:
+      - label: "DOI"
+        url: "https://doi.org/10.1073/pnas.2211932119"
+presentations: []
+teaching: []
+students: []
+industry: []
+professional_services: "I undertake consulting and expert witness work."
+media:
+  - id: "media-forbes-fake-reviews"
+    outlet: "Forbes"
+    title: "Scammers Are Flooding Amazon With Fake Reviews For Popular Holiday Gifts"
+    format: "Article"
+    date: "2022-12-12"
+    url: "https://www.forbes.com/sites/laurendebter/2022/12/12/scammers-are-flooding-amazon-with-fake-reviews-for-popular-holiday-gifts/"
+    related_work_ids:
+      - "pub-he-2022-fake-review-buyers"
+awards:
+  - id: "award-buzzell-finalist-2024"
+    title: "Finalist, 2024 Robert D. Buzzell MSI Best Paper Award"
+    year: 2024
+    related_work_ids:
+      - "pub-he-2022-fake-review-buyers"
+service: []
+technical_strengths: []
+languages: []

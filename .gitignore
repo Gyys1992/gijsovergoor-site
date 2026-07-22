@@ -1,0 +1,11 @@
+.worktrees/
+.superpowers/
+docs/superpowers/
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+review/

@@ -1,0 +1,82 @@
+{% extends "base.html.j2" %}
+{% block page_styles %}<link rel="stylesheet" href="{{ static_url('css/cv.css') }}">{% endblock %}
+{% block content %}
+<article class="cv">
+  <header class="cv-header">
+    <h1>{{ profile.profile.name }}</h1>
+    <p>{{ profile.profile.location }}</p>
+    <p><a href="mailto:{{ profile.profile.email }}">{{ profile.profile.email }}</a> · <a href="{{ url_for('') }}">{{ profile.profile.website }}</a></p>
+  </header>
+  <section><h2>Academic Positions</h2>
+    {% for item in profile.appointments %}
+    <div class="cv-dated"><div><strong>{{ item.institution }}</strong><br>{{ item.role }}</div><span>{{ item.start_year }}–{{ item.end_year or 'present' }}</span></div>
+    {% endfor %}
+  </section>
+  <section><h2>Education</h2>
+    {% for item in profile.education %}
+    <div class="cv-dated"><div><strong>{{ item.institution }}</strong><br>{{ item.degree }}{% for detail in item.details %}<br>{{ detail }}{% endfor %}</div><span>{{ item.year }}</span></div>
+    {% endfor %}
+  </section>
+  <section><h2>Research Interests</h2><p>{{ profile.research_interests | join(', ') }}</p></section>
+  <section><h2>Published Papers</h2>
+    {% for publication in profile.publications if publication.category == "journal" %}{% include "partials/publication.html.j2" %}{% endfor %}
+  </section>
+  {% set working_papers = projects | selectattr('status.value', 'in', ['revise_and_resubmit', 'under_review', 'preparing_resubmission', 'in_preparation']) | list %}
+  {% if working_papers %}
+  <section><h2>Working Papers</h2>
+    {% for project in working_papers %}
+    <article class="cv-entry" data-work-id="{{ project.id }}">
+      <p><strong>{{ project.title }}</strong><br>{{ project.authors | join(', ') }}<br><em>{{ project_status_text(project) }}</em></p>
+      {% for award in awards_by_work.get(project.id, []) %}
+      <p class="paper-honor" data-award-id="{{ award.id }}">{{ award.title }}</p>
+      {% endfor %}
+      {% if media_by_work.get(project.id) %}
+      <div class="related-media"><h3>Related media</h3><ul>{% for mention in media_by_work[project.id] %}{% include "partials/media.html.j2" %}{% endfor %}</ul></div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+  {% set work_in_progress = projects | selectattr('status.value', 'equalto', 'research_in_progress') | list %}
+  {% if work_in_progress %}
+  <section><h2>Selected Work in Progress</h2>
+    {% for project in work_in_progress %}
+    <article class="cv-entry" data-work-id="{{ project.id }}">
+      <p><strong>{{ project.title }}</strong> — {{ project.authors | join(', ') }}</p>
+      {% for award in awards_by_work.get(project.id, []) %}
+      <p class="paper-honor" data-award-id="{{ award.id }}">{{ award.title }}</p>
+      {% endfor %}
+      {% if media_by_work.get(project.id) %}
+      <div class="related-media"><h3>Related media</h3><ul>{% for mention in media_by_work[project.id] %}{% include "partials/media.html.j2" %}{% endfor %}</ul></div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+  <section><h2>Peer-Reviewed Conference Proceedings</h2>
+    {% for publication in profile.publications if publication.category == "conference" %}{% include "partials/publication.html.j2" %}{% endfor %}
+  </section>
+  {% for kind, heading in [('invited_talk', 'Invited Talks'), ('conference_presentation', 'Conference Presentations')] %}
+  {% set presentation_items = profile.presentations | selectattr('kind', 'equalto', kind) | list %}
+  {% if presentation_items %}
+  <section><h2>{{ heading }}</h2><ul>
+    {% for year_group in presentation_items | groupby('year') | reverse %}
+    <li><strong>{{ year_group.grouper }}:</strong> {{ year_group.list | map('presentation_label') | join(', ') }}</li>
+    {% endfor %}
+  </ul></section>
+  {% endif %}
+  {% endfor %}
+  <section><h2>Teaching</h2>{% for item in profile.teaching %}<p><strong>{{ item.institution }}</strong><br>{{ item.course }} ({{ item.level }}): {{ item.terms | join(', ') }}{% if item.role %}<br><em>{{ item.role }}</em>{% endif %}</p>{% endfor %}</section>
+  <section><h2>Students and Advising</h2>{% for item in profile.students %}<p><strong>{{ item.name }}</strong> — {{ item.program }}, {{ item.institution }}<br>Role: {{ item.role }}{% if item.placement %}; Placement: {{ item.placement }}{% endif %}</p>{% endfor %}</section>
+  {% if profile.professional_services %}
+  {% set linkedin_links = profile.profile.links | selectattr('label', 'equalto', 'LinkedIn') | list %}
+  <section><h2>Consulting and Expert Witness Work</h2>
+    <p>{{ profile.professional_services }} To discuss a potential engagement, <a href="mailto:{{ profile.profile.email }}">email me</a>{% if linkedin_links %} or <a href="{{ linkedin_links[0].url }}">connect with me on LinkedIn</a>{% endif %}.</p>
+  </section>
+  {% endif %}
+  <section><h2>Media Coverage</h2><ul>{% for mention in profile.media %}{% include "partials/media.html.j2" %}{% endfor %}</ul></section>
+  <section><h2>Awards</h2><ul>{% for award in profile.awards %}<li data-award-id="{{ award.id }}">{{ award.title }}{% if award.amount %} ({{ award.amount }}){% endif %}</li>{% endfor %}</ul></section>
+  <section><h2>Academic Service</h2><ul>{% for item in profile.service %}<li>{{ item.role }}{% if item.organization %} — {{ item.organization }}{% endif %}{% if item.details %}: {{ item.details }}{% endif %}</li>{% endfor %}</ul></section>
+  <section><h2>Technical Strengths and Languages</h2>{% for item in profile.technical_strengths %}<p><strong>{{ item.category }}:</strong> {{ item.items | join(', ') }}</p>{% endfor %}<p><strong>Languages:</strong> {% for item in profile.languages %}{{ item.language }} ({{ item.proficiency }}){% if not loop.last %}, {% endif %}{% endfor %}</p></section>
+</article>
+{% endblock %}

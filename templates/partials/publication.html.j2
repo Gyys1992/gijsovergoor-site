@@ -1,0 +1,26 @@
+<article class="publication" data-work-id="{{ publication.id }}">
+  <p class="citation">{{ publication.citation_html | safe }}</p>
+  {% if publication.author_note %}
+  <p class="author-note">{{ publication.author_note }}</p>
+  {% endif %}
+  {% if publication.links %}
+  <p class="paper-links">
+    {% for link in publication.links %}
+    <a href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+  </p>
+  {% endif %}
+  {% for award in awards_by_work.get(publication.id, []) %}
+  <p class="paper-honor" data-award-id="{{ award.id }}">{{ award.title }}</p>
+  {% endfor %}
+  {% if (show_related_media | default(true)) and media_by_work.get(publication.id) %}
+  <div class="related-media">
+    <h3>Related media</h3>
+    <ul>
+      {% for mention in media_by_work[publication.id] %}
+      {% include "partials/media.html.j2" %}
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article>

@@ -1,0 +1,17 @@
+{% extends "base.html.j2" %}
+{% block content %}
+<article class="prose-page">
+  <p class="eyebrow">Biography</p>
+  <h1>About Me</h1>
+  <div class="prose">
+    <p>I am an {{ profile.profile.title }} at {{ profile.profile.institution }}.</p>
+    <p>{{ profile.profile.positioning }}</p>
+    {{ bio_html | safe }}
+  </div>
+  <ul class="profile-links">
+    {% for link in profile.profile.links %}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+</article>
+{% endblock %}

@@ -1,0 +1,19 @@
+site:
+  canonical_url: "https://www.gijsovergoor.com"
+  routes:
+    - ""
+    - "research"
+    - "cv"
+    - "job-market"
+paths:
+  vault_root: "../Vault"
+  public_profile: "tenure/public-profile.yaml"
+  tenure_log: "tenure/log.md"
+  projects: "research/projects"
+  public_data: "data/public"
+  output: "dist"
+  templates: "templates"
+  static: "static"
+  content: "content"
+release:
+  external_link_timeout_seconds: 10

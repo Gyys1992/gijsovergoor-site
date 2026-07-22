@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="canonical" href="{{ canonical }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ canonical }}">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="{{ static_url('css/site.css') }}">
+    {% block page_styles %}{% endblock %}
+    <script type="application/ld+json">{{ person_schema | tojson_pretty }}</script>
+    {% for scholarly_article in publication_schema %}
+    <script type="application/ld+json">{{ scholarly_article | tojson_pretty }}</script>
+    {% endfor %}
+  </head>
+  <body class="route-{{ route or 'home' }}">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="site-header">
+      <a class="site-name" href="{{ url_for('') }}">Gijs Overgoor</a>
+      <nav aria-label="Primary">
+        <ul>
+          {% for target, label in [
+            ('', 'Home'),
+            ('research', 'Research'),
+            ('cv', 'CV'),
+            ('job-market', 'Job Market')
+          ] %}
+          <li>
+            <a href="{{ url_for(target) }}"
+               {% if route == target %}aria-current="page"{% endif %}>{{ label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+    <main id="main">{% block content %}{% endblock %}</main>
+    <footer class="site-footer">
+      <span>Gijs Overgoor</span>
+      <a href="mailto:{{ profile.profile.email }}">{{ profile.profile.email }}</a>
+    </footer>
+  </body>
+</html>
