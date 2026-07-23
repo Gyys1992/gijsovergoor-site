@@ -8,7 +8,8 @@ profile:
     email: govergoor@smu.edu
     website: gijsovergoor.com
     portrait_alt: Gijs Overgoor, Assistant Professor of Marketing at SMU Cox School of Business
-    positioning: I develop and validate AI-based measures for unstructured marketing data. My primary
+    positioning: I am an Assistant Professor of Marketing at Southern Methodist University Cox School
+      of Business. I develop and validate AI-based measures for unstructured marketing data. My primary
       substantive areas are advertising and digital platforms, with a specific focus on visual content.
       A complementary research stream examines platform misinformation and fake-review detection. I use
       a multi-method approach that combines AI and machine learning with econometrics, surveys and experiments,
@@ -259,7 +260,7 @@ profile:
   - id: presentation-ama-winter-madrid-2026
     kind: conference_presentation
     year: 2026
-    title: AMA Winter Academic Conference, Madrid
+    title: AMA Winter Academic Conference
     venue: AMA Winter Academic Conference
     source_key: 2026-02-14|talk|presented-at-winter-ama-conference-madrid
   - id: presentation-scholar-session-2025
