@@ -1,7 +1,7 @@
 {% extends "base.html.j2" %}
 {% block content %}
 <header class="page-intro">
-  <h1>Publications and projects</h1>
+  <h1>My Research</h1>
   {% set publication_venues = profile.publications | selectattr('category', 'equalto', 'journal') | map(attribute='journal') | list %}
   {% set media_outlets = profile.media | map(attribute='outlet') | list %}
   <p>My work has been published in {{ publication_venues | human_join }}. It has been covered by {{ media_outlets | human_join }}.</p>

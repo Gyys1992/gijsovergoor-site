@@ -297,16 +297,20 @@ def test_job_market_body_text_matches_migration_hash() -> None:
     assert digest == expected_path.read_text(encoding="utf-8").strip()
 
 
-def test_bio_supporting_copy_keeps_background_separate() -> None:
+def test_bio_supporting_copy_is_background_prose() -> None:
     bio = Path("content/bio.md").read_text(encoding="utf-8")
     normalized_bio = " ".join(bio.split())
 
-    assert bio.startswith("## Background\n")
-    assert "## Outside Work" in bio
+    # Background now flows as part of About Me: no standalone headings.
+    assert "## Background" not in bio
+    assert "## Outside Work" not in bio
+    # Personal "outside work" copy was removed entirely.
+    assert "soccer" not in bio.lower()
+    assert "dog" not in normalized_bio
+    # Still no oversharing or project-note leakage.
     assert "dissertation" not in bio.lower()
     assert "AdNotator" not in bio
     assert "CrossFit" not in bio
-    assert (
-        "I enjoy spending time with my wife, son, and dog and enjoy playing "
-        "(and watching) sports, mainly soccer."
-    ) in normalized_bio
+    # Retains the factual academic background.
+    assert "Rochester Institute of Technology" in normalized_bio
+    assert "University of Amsterdam" in normalized_bio

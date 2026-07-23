@@ -103,7 +103,7 @@ def test_research_intro_names_publication_and_media_venues(
     )
     intro = research.select_one(".page-intro").get_text(" ", strip=True)
     assert research.select_one("h1").get_text(" ", strip=True) == (
-        "Publications and projects"
+        "My Research"
     )
     assert "Proceedings of the National Academy of Sciences" in intro
     # The "published in" sentence names journal venues only; conference
