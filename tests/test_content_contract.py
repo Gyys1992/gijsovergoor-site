@@ -64,7 +64,9 @@ def test_required_public_content_contract() -> None:
             "journal": "Journal of Marketing Research",
             "featured": True,
             "order": 10,
-            "links": [],
+            "links": [
+                ("SSRN", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4471248"),
+            ],
         },
         "project-champions-neurovit": {
             "title": "NeuroViT: A Brain-Aligned Vision Transformer for Product Image Analysis",
@@ -110,7 +112,9 @@ def test_required_public_content_contract() -> None:
             "journal": None,
             "featured": True,
             "order": 40,
-            "links": [],
+            "links": [
+                ("SSRN", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5156231"),
+            ],
         },
         "project-tv-ads-impact-dollar-value": {
             "title": (
@@ -127,7 +131,9 @@ def test_required_public_content_contract() -> None:
             "journal": None,
             "featured": True,
             "order": 50,
-            "links": [],
+            "links": [
+                ("SSRN", "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110746"),
+            ],
         },
         "project-skin-tone-diversity": {
             "title": (

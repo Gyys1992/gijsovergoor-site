@@ -66,7 +66,7 @@
   </ul></section>
   {% endif %}
   {% endfor %}
-  <section><h2>Teaching</h2>{% for item in profile.teaching %}<p><strong>{{ item.institution }}</strong><br>{{ item.course }} ({{ item.level }}): {{ item.terms | join(', ') }}{% if item.role %}<br><em>{{ item.role }}</em>{% endif %}</p>{% endfor %}</section>
+  <section><h2>Teaching</h2>{% for item in profile.teaching %}<p><strong>{{ item.institution }}</strong><br>{{ item.course }} ({{ item.level }}): {{ item.terms | join(', ') }}{% if item.role and item.role != "Instructor" %}<br><em>{{ item.role }}</em>{% endif %}</p>{% endfor %}</section>
   <section><h2>Students and Advising</h2>{% for item in profile.students %}<p><strong>{{ item.name }}</strong> — {{ item.program }}, {{ item.institution }}<br>Role: {{ item.role }}{% if item.placement %}; Placement: {{ item.placement }}{% endif %}</p>{% endfor %}</section>
   {% if profile.professional_services %}
   {% set linkedin_links = profile.profile.links | selectattr('label', 'equalto', 'LinkedIn') | list %}

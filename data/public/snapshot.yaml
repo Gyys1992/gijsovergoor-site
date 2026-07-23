@@ -172,6 +172,8 @@ profile:
     journal: Proceedings of the ACM International Conference on Multimedia Retrieval
     pages: 233–241
     links:
+    - label: ACM DL
+      url: https://dl.acm.org/doi/10.1145/3078971.3078998
     - label: UvA DARE
       url: https://www.dare.uva.nl/id/e732160c-34f3-4766-bb87-e8642d40d44d
   presentations:
@@ -665,10 +667,12 @@ projects:
   journal: Journal of Marketing Research
   summary: Examines how the consistency and timing of racial representation in television advertising
     shape consumer responses.
-  links: []
+  links:
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4471248
   featured: true
   order: 10
-  last_verified: '2026-07-18'
+  last_verified: '2026-07-23'
 - id: project-champions-neurovit
   title: 'NeuroViT: A Brain-Aligned Vision Transformer for Product Image Analysis'
   authors:
@@ -715,10 +719,12 @@ projects:
   status: in_preparation
   summary: Develops a public-data approach for identifying coordinated fake-review activity on e-commerce
     platforms.
-  links: []
+  links:
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5156231
   featured: true
   order: 40
-  last_verified: '2026-07-18'
+  last_verified: '2026-07-23'
 - id: project-tv-ads-impact-dollar-value
   title: 'The Dollar Value of Better Ad Content: Tracing the Relationships Between Ad Creatives, Zapping
     Rates, and Ad Elasticities'
@@ -730,10 +736,12 @@ projects:
   status: research_in_progress
   summary: Examines relationships among television-ad creative content, viewer zapping, and advertising
     elasticities.
-  links: []
+  links:
+  - label: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110746
   featured: true
   order: 50
-  last_verified: '2026-07-18'
+  last_verified: '2026-07-23'
 - id: project-skin-tone-diversity
   title: 'Shades of Representation: Auto-Detection and Perception of Skin-Tone Diversity in Visual Marketing
     Communication'
