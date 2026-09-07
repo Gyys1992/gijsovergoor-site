@@ -176,8 +176,10 @@ def build_site(config: SiteConfig) -> BuildResult:
         ),
         "job-market": (
             "job_market.html.j2",
-            "Job Market — Gijs Overgoor",
-            "Gijs Overgoor's preserved job-market essay.",
+            "Academic Job Market Advice — Gijs Overgoor",
+            "Advice on the marketing academic job market, from someone who "
+            "went through it: build a network, share information, and stop "
+            "refreshing the spreadsheet.",
         ),
     }
     pages: list[Path] = []

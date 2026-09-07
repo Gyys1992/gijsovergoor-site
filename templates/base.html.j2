@@ -27,8 +27,7 @@
           {% for target, label in [
             ('', 'Home'),
             ('research', 'Research'),
-            ('cv', 'CV'),
-            ('job-market', 'Job Market')
+            ('cv', 'CV')
           ] %}
           <li>
             <a href="{{ url_for(target) }}"
@@ -41,7 +40,10 @@
     <main id="main">{% block content %}{% endblock %}</main>
     <footer class="site-footer">
       <span>Gijs Overgoor</span>
-      <a href="mailto:{{ profile.profile.email }}">{{ profile.profile.email }}</a>
+      <nav class="footer-links" aria-label="Secondary">
+        <a href="{{ url_for('job-market') }}">Academic Job Market Advice</a>
+        <a href="mailto:{{ profile.profile.email }}">{{ profile.profile.email }}</a>
+      </nav>
     </footer>
   </body>
 </html>

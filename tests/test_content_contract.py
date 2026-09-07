@@ -295,6 +295,10 @@ def test_job_market_body_text_matches_migration_hash() -> None:
     ).hexdigest()
 
     assert digest == expected_path.read_text(encoding="utf-8").strip()
+    # Renamed for discoverability; the essay prose itself is unchanged.
+    assert content_path.read_text(encoding="utf-8").startswith(
+        "# Academic Job Market Advice\n"
+    )
 
 
 def test_bio_supporting_copy_is_background_prose() -> None:

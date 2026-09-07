@@ -54,12 +54,19 @@ def test_build_emits_exact_routes_and_relative_navigation(tmp_path: Path) -> Non
     )
     assert home.select_one('a[href="research/"]') is not None
     assert home.select_one('link[href="static/css/site.css"]') is not None
-    assert [link.get_text(" ", strip=True) for link in home.select("nav a")] == [
+    assert [
+        link.get_text(" ", strip=True)
+        for link in home.select('nav[aria-label="Primary"] a')
+    ] == [
         "Home",
         "Research",
         "CV",
-        "Job Market",
     ]
+    # Job-market advice is reachable but deliberately not in the primary nav.
+    assert (
+        home.select_one('nav[aria-label="Secondary"] a[href="job-market/"]')
+        is not None
+    )
     assert research.select_one('a[href="../cv/"]') is not None
     assert research.select_one('link[href="../static/css/site.css"]') is not None
     assert "bio/" not in (config.output_dir / "sitemap.xml").read_text(

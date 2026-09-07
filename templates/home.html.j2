@@ -19,6 +19,7 @@
   <div class="prose">
     <p>{{ profile.profile.positioning }}</p>
     {{ bio_html | safe }}
+    <p><a class="text-link" href="{{ url_for('job-market') }}">Read my academic job market advice</a> — what actually worked when I went on the marketing academic job market.</p>
   </div>
   <ul class="profile-links">
     {% for link in profile.profile.links %}

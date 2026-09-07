@@ -152,6 +152,11 @@ h3 { font-size: 1.1rem; }
 }
 .media-list,
 .related-media ul { padding-left: 1.2rem; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem 1.25rem;
+}
 .site-footer {
   display: flex;
   justify-content: space-between;

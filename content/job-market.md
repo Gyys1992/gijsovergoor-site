@@ -1,4 +1,4 @@
-# Marketing Academic Job Market
+# Academic Job Market Advice
 
 Following the lead of some amazing scholars I’ve met over the past few years, I’m going to tell you about my marketing academic job market experience. The main reason I am sharing this is because sharing is one of the main reasons my job search was successful. The secondary reason is because I felt like some of the advice that I have gotten didn’t exactly turn out to be that relevant to my own experience.
 
