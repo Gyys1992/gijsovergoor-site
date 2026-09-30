@@ -91,8 +91,8 @@ def test_required_public_content_contract() -> None:
                 "Under Noisy Human Benchmarks"
             ),
             "authors": ["Gijs Overgoor", "Samsun Knight", "Yakov Bart"],
-            "status": "in_preparation",
-            "journal": None,
+            "status": "under_review",
+            "journal": "Information Systems Research",
             "featured": True,
             "order": 30,
             "links": [
@@ -108,8 +108,8 @@ def test_required_public_content_contract() -> None:
                 "Ethan Feldman",
                 "Anol Bhattacherjee",
             ],
-            "status": "in_preparation",
-            "journal": None,
+            "status": "under_review",
+            "journal": "Management Science",
             "featured": True,
             "order": 40,
             "links": [
@@ -164,6 +164,7 @@ def test_required_public_content_contract() -> None:
         "pub-he-2022-fake-review-buyers",
         "pub-overgoor-2022-simplicity",
         "pub-overgoor-2019-ai-marketing",
+        "proc-xie-2026-adshot",
         "proc-xie-2026-adsum",
         "proc-overgoor-2017-brand-popularity",
     }
@@ -276,9 +277,7 @@ def test_required_public_content_contract() -> None:
         "SQL",
     ]
     assert profile.industry == []
-    assert profile.professional_services == (
-        "I undertake consulting and expert witness work."
-    )
+    assert profile.professional_services == "Expert witness experience."
     reviewer_service = next(
         item for item in profile.service if item.id == "service-ad-hoc-reviewer"
     )

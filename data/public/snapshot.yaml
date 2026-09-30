@@ -136,6 +136,21 @@ profile:
       url: https://doi.org/10.1177/0008125619859318
     - label: UvA DARE
       url: https://dare.uva.nl/search?identifier=0ec5673e-5725-46a1-baef-1c18101a2ec6
+  - id: proc-xie-2026-adshot
+    category: conference
+    citation_html: 'W. Xie, O. Rastogi, <strong>G. Overgoor</strong>, S. Ostadabbas, Y. Bart (2026), “AdShot:
+      Benchmarking Multimodal Large Language Models for Video Advertisement Clipping,” <em>Advances in
+      Neural Information Processing Systems (NeurIPS 2026), ED Track</em>.'
+    title: 'AdShot: Benchmarking Multimodal Large Language Models for Video Advertisement Clipping'
+    authors:
+    - Wen Xie
+    - Om Rastogi
+    - Gijs Overgoor
+    - Sarah Ostadabbas
+    - Yakov Bart
+    year: 2026
+    journal: Advances in Neural Information Processing Systems (NeurIPS 2026), ED Track
+    links: []
   - id: proc-xie-2026-adsum
     category: conference
     citation_html: 'W. Xie, Y. Zhu, <strong>G. Overgoor</strong>, Y. Bart, A. Lapedriza Garcia, S. Ostadabbas
@@ -530,7 +545,7 @@ profile:
     role: Research Mentor
     placement: Amazon
   industry: []
-  professional_services: I undertake consulting and expert witness work.
+  professional_services: Expert witness experience.
   media:
   - id: media-forbes-fake-reviews
     outlet: Forbes
@@ -629,7 +644,7 @@ profile:
     role: Ad Hoc Reviewer
     details: Journal of Marketing Research; Journal of Marketing; Marketing Science; Management Science;
       International Journal of Research in Marketing; Information Systems Research; Journal of Consumer
-      Research
+      Research; Production and Operations Management
   - id: service-smu-marketing-seminar-organizer
     role: Organizer
     organization: SMU Marketing Seminar Series
@@ -699,7 +714,8 @@ projects:
   - Gijs Overgoor
   - Samsun Knight
   - Yakov Bart
-  status: in_preparation
+  status: under_review
+  journal: Information Systems Research
   summary: Studies the reliability, bias, and downstream validity of AI-based annotation for video-advertising
     research.
   links:
@@ -717,7 +733,8 @@ projects:
   - Ali Tosyali
   - Ethan Feldman
   - Anol Bhattacherjee
-  status: in_preparation
+  status: under_review
+  journal: Management Science
   summary: Develops a public-data approach for identifying coordinated fake-review activity on e-commerce
     platforms.
   links:
@@ -725,7 +742,7 @@ projects:
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5156231
   featured: true
   order: 40
-  last_verified: '2026-07-23'
+  last_verified: '2026-09-30'
 - id: project-tv-ads-impact-dollar-value
   title: 'The Dollar Value of Better Ad Content: Tracing the Relationships Between Ad Creatives, Zapping
     Rates, and Ad Elasticities'
