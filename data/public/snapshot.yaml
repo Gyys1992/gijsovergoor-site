@@ -266,6 +266,12 @@ profile:
     year: 2018
     title: Teradata Analytics Universe
     venue: Teradata Analytics Universe
+  - id: presentation-waici-nyu-2026
+    kind: conference_presentation
+    year: 2026
+    title: WAICI
+    venue: New York University
+    source_key: 2026-10-02|talk|waici-presented-adnotator-correcting-toward-the-wrong-target-at-the-waici-conference-at-nyu
   - id: presentation-symposium-ai-marketing-2026
     kind: conference_presentation
     year: 2026
@@ -696,7 +702,7 @@ projects:
   - Hang-Yee Chan
   - William Rand
   - Willemijn van Dolen
-  status: under_review
+  status: revise_and_resubmit
   journal: Journal of Marketing Research
   summary: Develops brain-aligned image measures and studies their relationship with consumer responses
     to product images.
@@ -707,7 +713,7 @@ projects:
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5272560
   featured: true
   order: 20
-  last_verified: '2026-07-22'
+  last_verified: '2026-10-08'
 - id: project-adnotator-video-understanding
   title: 'Correcting Toward the Wrong Target: LLM-Annotated Regressors Under Noisy Human Benchmarks'
   authors:
@@ -751,7 +757,7 @@ projects:
   - Gijs Overgoor
   - Tsung Hsieh
   - Yakov Bart
-  status: research_in_progress
+  status: in_preparation
   summary: Examines relationships among television-ad creative content, viewer zapping, and advertising
     elasticities.
   links:
@@ -759,7 +765,7 @@ projects:
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110746
   featured: true
   order: 50
-  last_verified: '2026-07-23'
+  last_verified: '2026-10-16'
 - id: project-skin-tone-diversity
   title: 'Shades of Representation: Auto-Detection and Perception of Skin-Tone Diversity in Visual Marketing
     Communication'
