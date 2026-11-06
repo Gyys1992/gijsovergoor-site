@@ -721,7 +721,7 @@ projects:
   - Samsun Knight
   - Yakov Bart
   status: under_review
-  journal: Information Systems Research
+  journal: Management Science
   summary: Studies the reliability, bias, and downstream validity of AI-based annotation for video-advertising
     research.
   links:
@@ -731,7 +731,7 @@ projects:
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5494548
   featured: true
   order: 30
-  last_verified: '2026-07-18'
+  last_verified: '2026-11-06'
 - id: project-fake-review
   title: Public traces expose coordinated fake review campaigns on digital platforms
   authors:
