@@ -92,7 +92,7 @@ def test_required_public_content_contract() -> None:
             ),
             "authors": ["Gijs Overgoor", "Samsun Knight", "Yakov Bart"],
             "status": "under_review",
-            "journal": "Information Systems Research",
+            "journal": "Management Science",
             "featured": True,
             "order": 30,
             "links": [
